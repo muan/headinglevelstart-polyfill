@@ -1,0 +1,8 @@
+{
+  "name": "headinglevelstart-polyfill",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:muan/headinglevelstart-polyfill.git",
+  "author": "Mu-An Chiou <github@muan.dev>",
+  "license": "MIT"
+}
