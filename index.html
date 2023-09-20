@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>headinglevelstart polyfill</title>
+  <script src="./index.js" defer></script>
+  <link rel="stylesheet" href="https://muan.github.io/muan.css/index.css">
+</head>
+<body>
+
+  <h1>headinglevelstart polyfill</h1>
+  
+  <h2>Usage</h2>
+
+  <h2>Example</h2>
+  <div headinglevelstart="3">
+    <h1>jsdom</h1>
+    <h2>Basic usage</h2>
+    Duis molestie orci at accumsan aliquet. Curabitur vestibulum dolor et purus accumsan dictum. Maecenas eget vulputate mauris. Nulla venenatis nisi vel ligula euismod, nec sagittis sapien fringilla. Nulla facilisi. Pellentesque non sapien tortor. Nulla nulla nibh, cursus vel lectus eget, posuere dapibus mi.
+    <h2>Customizing jsdom</h2>
+    Suspendisse non orci id tortor sollicitudin porttitor. Curabitur non lacus pharetra, finibus neque at, pretium arcu. Fusce vehicula accumsan ex, sed suscipit lorem tristique ac. Suspendisse non diam a urna ornare ultricies eu quis augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sed dolor ut enim ultricies interdum.
+
+
+    <h3>Simple options</h3>
+    Aliquam suscipit magna sed lectus volutpat, eget vestibulum dolor ornare.
+
+
+  </div>
+
+  <h3>Before</h3>
+<pre>
+h1: headinglevelstart polyfill
+--h2: Usage
+--h2: Example
+h1: jsdom
+--h2: Basic usage
+--h2: Customizing jsdom
+----h3: Simple options
+----h3: Before
+----h3: After
+</pre>
+  <h3>After</h3>
+<pre>
+h1: headinglevelstart polyfill
+--h2: Usage
+--h2: Example
+----h3: jsdom
+------h4: Basic usage
+------h4: Customizing jsdom
+--------h5: Simple options
+----h3: Before
+----h3: After
+</pre>
+
+</body>
+</html>
