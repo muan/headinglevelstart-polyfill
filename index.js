@@ -24,8 +24,7 @@ if ('level' in HTMLHeadingElement.prototype) {
   observer.observe(targetNode, { childList: true, subtree: true, attributes: true })
 
   function setHeadingLevels(el) {
-    const startLevel = Number(el.getAttribute(attributeName))
-    // TODO: Cap headingstartlevel here
+    const startLevel = Math.min(Number(el.getAttribute(attributeName)), 7)
     if (startLevel === NaN || startLevel === 0) return
     
     for (const heading of el.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
@@ -34,8 +33,7 @@ if ('level' in HTMLHeadingElement.prototype) {
       if (heading.hasAttribute('aria-level') && notSetBefore) continue
       if (notSetBefore) headingMap.push(heading)
       
-      // TODO: Cap max aria-label here
-      const level = startLevel + Number(heading.tagName[1]) - 1
+      const level = Math.min(startLevel + Number(heading.tagName[1]) - 1, 9)
       heading.setAttribute('aria-level', level)
     }
   }
